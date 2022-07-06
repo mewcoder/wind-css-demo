@@ -1,16 +1,12 @@
 import Unocss from "unocss/vite";
-import { presetAttributify, presetUno } from "unocss";
+import { presetUno, presetAttributify, presetIcons } from "unocss";
 
 export default {
   plugins: [
     Unocss({
-      presets: [
-        presetAttributify({
-          /* preset options */
-        }),
-        presetUno(),
-        // ...custom presets
-      ],
+      presets: [presetUno(), presetAttributify(), presetIcons()],
     }),
   ],
 };
+
+// https://icones.js.org/collection/ep
